@@ -17,8 +17,8 @@ struct Theme {
 
 struct Palette {
     let blue = UIColor.myBlue
-    let green = UIColor.myGreen
-    let lightBlue = UIColor.myLightBlue
+    //let green = UIColor.myGreen
+    //let lightBlue = UIColor.myLightBlue
 }
 
 struct Font {
@@ -35,6 +35,6 @@ struct LabelStyle {
 
 struct LabelStyles {
     static let title = LabelStyle(color: Theme.palette.blue, font: Theme.font.title)
-    static let subtitle = LabelStyle(color: Theme.palette.green, font: Theme.font.subtitle)
-    static let heading = LabelStyle(color: Theme.palette.lightBlue, font: Theme.font.heading)
+    //static let subtitle = LabelStyle(color: Theme.palette.green, font: Theme.font.subtitle)
+    //static let heading = LabelStyle(color: Theme.palette.lightBlue, font: Theme.font.heading)
 }

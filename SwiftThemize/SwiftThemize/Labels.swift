@@ -11,26 +11,26 @@ import UIKit
 @IBDesignable
 class TitleLabel: UILabel {
 
-     var isInterfaceBuilder: Bool = false
+     //var isInterfaceBuilder: Bool = false
     
     override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
         
-        self.isInterfaceBuilder = true
+        //self.isInterfaceBuilder = true
         
         self.applyStyle()
-    
+        
     }
     
     private func applyStyle() {
         
-        let style = LabelStyles.title
         
-        self.font = style.font
-        //self.textColor = style.color
-        #error("will crash")
-        //self.textColor = UIColor.myBlue
+        //#error("will crash")
+        //self.textColor = UIColor(red: 1, green: 1, blue: 0, alpha: 1)
+        //self.font = UIFont.Bathey.size11
     }
+    
+    
 }
 
 class SubTitleLabel: UILabel {
@@ -39,4 +39,24 @@ class SubTitleLabel: UILabel {
 
 class HeadingLabel: UILabel {
     
+}
+
+extension UILabel{
+    @IBInspectable var style: String{
+        set{
+            
+            if style == "title"{
+                let style = LabelStyles.title
+                
+                self.font = style.font
+                self.textColor = style.color
+            }else{
+                self.textColor = .purple
+            }
+        }
+        
+        get{
+            return ""
+        }
+    }
 }

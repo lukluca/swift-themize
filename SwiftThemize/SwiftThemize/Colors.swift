@@ -10,10 +10,14 @@ import UIKit
 
 extension UIColor {
     
-    static let myGreen = UIColor(named: "MyGreen")!
+    //static let myGreen = UIColor(named: "MyGreen")!
     
+    #if !TARGET_INTERFACE_BUILDER
     static let myBlue = UIColor(named: "MyBlue")!
+    #else
+    static let myBlue = UIColor(red: 0, green: 0, blue: 1, alpha: 1)
+    #endif
     
-    static let myLightBlue = UIColor(named: "MyLightBlue")!
+    //static let myLightBlue = UIColor(named: "MyLightBlue")!
     
 }

@@ -27,4 +27,8 @@ extension UIFont {
     var size11: UIFont {
         return self.withSize(11)
     }
+    
+    var size211: UIFont {
+        return self.withSize(211)
+    }
 }
